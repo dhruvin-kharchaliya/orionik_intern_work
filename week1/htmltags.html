@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic html tags.</title>
+    <!-- for better understanding we use inline style  -->
+    <style>
+        #yello {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+        }
+
+        form {
+            height: 570px;
+            width: 547px;
+            /* text-align: center; */
+            border: 1px solid black;
+            background-color: rgb(237, 196, 245);
+        }
+
+        form input {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        form button {
+            margin: 14px;
+            padding: 6px 19px;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hi this is Heading tag.</h1>
+    <h2>Hi this is Heading tag.</h2>
+    <h3>Hi this is Heading tag.</h3>
+    <h4>Hi this is Heading tag.</h4>
+    <h5>Hi this is Heading tag.</h5>
+    <h6>Hi this is Heading tag.</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos, modi necessitatibus debitis sequi dolores
+        doloribus earum quo impedit voluptatem quaerat quia officia sunt ducimus optio aut libero. Dignissimos,
+        possimus.</p>
+    <p>Hi <br></p>
+    hello
+    <p>Heading tag Examples</p>
+    <hr>
+    <h1>Understanding Common Attributes</h1>
+    <div id="yello">Id is Uniqe one</div><br>
+    <div class="red"></div><br>
+    <div class="red"></div><br>
+    <hr>
+    <h1>Forms in html.</h1>
+
+    <form action="#another file path" method="post">
+        <label for="name">Name:
+            <input type="text" name="" id="name" placeholder="Enter your name" required><br>
+
+        </label>
+
+        <label for="email">Email:
+            <input type="email" name="" id="email" placeholder="Enter your email"><br>
+
+        </label>
+        <label for="pass">Password:
+            <input type="password" name="" id="email" placeholder="Enter your password"><br>
+
+        </label>
+        <label for="add">Address:
+            <textarea name="" id="add" placeholder="Enter the address"></textarea>
+        </label><br><br>
+        <label for="language">Choose a language</label>
+        <select name="" id="language">
+            <option value="hindi">hindi</option>
+            <option value="hindi">English</option>
+            <option value="hindi">Gujrati</option>
+
+
+        </select><br>
+    
+
+        <label for="hobby">select your Hobbies:
+            <input type="checkbox" name="hobby" id="">reading
+        </label> <br>
+
+        <label></label>
+        <input type="checkbox" name="hobby" value="traveling">
+        Traveling
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="hobby" value="gaming">
+            Gaming
+        </label><br>
+
+        <label></label>
+        <input type="checkbox" name="hobby" value="cooking">
+        Cooking
+        </label><br>
+        <br>
+        <label for="gender">select your gender</label>
+        <input type="radio" name="gender" value="male">
+        Male
+
+        <input type="radio" name="gender" value="female">
+        Female
+
+        <label>
+            <input type="radio" name="gender" value="other">
+            Other <br>
+           
+                <label for="age">Age (between 18 and 100):</label>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+                <br>
+                <a href="https://google.com" target="_blank">Open google.com in a new tab</a> <br>
+            <button>Submit</button>
+    </form>
+    
+    <br><br>
+    <hr>
+    <h1>
+        html decument stucture is define in top of the page.
+    </h1> <br>
+    <h1>text Formatting and Links</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptates cupiditate aliquid, error officia
+        aspernatur similique expedita. Fuga unde, nihil quis nesciunt laudantium recusandae, sint sunt vel commodi
+        voluptatem assumenda.</p> <br>
+
+    <p>All heading define in top of the page.</p><br>
+    <b>Hello</b> <br>
+    <em>hello this is example for Italic taxt</em> <br>
+    <strong>Similar to bold tag</strong> <br>
+    <a href="https://google.com">hey Google </a>
+    <hr>
+    <h1>HTML lists</h1>
+    <h3>Orderlist</h3>
+    fruits
+    <ol type="A">
+        <li>mango</li>
+        <li>Apple</li>
+        <li>Banana</li>
+
+    </ol>
+    <br>
+    <h3>Unordered lists</h3>
+    cars<ul type="disc">
+        <li>volvo</li>
+        <li>BMW</li>
+        <li>Skoda</li>
+    </ul>
+    <h3> Description lists</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+    </dl>
+    <h3>Nested lists</h3>
+
+
+    <ul>
+        <li>animals</li>
+        <ol>
+            <li>wild Animals</li>
+            <ul>
+                <li>Lion</li>
+                <li>tigar</li>
+                <li>elephant</li>
+            </ul>
+        </ol>
+    </ul>
+
+
+    <ol>
+        <li>Pets</li>
+        <ul type="disc">
+            <li>cat</li>
+            <li>dog</li>
+            <li>birds</li>
+        </ul>
+    </ol>
+    </ul>
+    <hr><br>
+
+    <h1>HTML Tables</h1>
+    <table>
+        <caption>Simple Example of Table tag</caption>
+        <tr>
+            <td rowspan="2">state of the health</td>
+            <td colspan="2">fasting value</td>
+            <td>After Eating</td>
+        </tr>
+        <tr>
+            <td>minimum</td>
+            <td>Maximam</td>
+            <td>2 horse after eating</td>
+
+        </tr>
+        <tr>
+            <td>Helthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>less then 140</td>
+        </tr>
+        <tr>
+            <td>Pre diabites</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>diabites</td>
+            <td>More then 126</td>
+            <td>N/A</td>
+            <td>more then 200</td>
+        </tr>
+    </table>
+
+    <h1>html Media Elements</h1>
+    <img src="./All_images/spider.jfif" alt="spiderman img"><br>
+    <video width="640" height="360" controls>
+        <source src="./All_images/sample.mp4" type="video/mp4">
+    </video> <br>
+
+    <audio controls>
+        <source src="./All_images/simpleAudio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <br>
+    <embed src="./All_images/samplePDF.pdf" type="application/pdf" width="600" height="600">
+    <br>
+
+    <iframe src="demofile.html" height="500px" width="900px" frameborder="0"></iframe>
+    <br>
+    <object data="./All_images/sample.mp4" type=""></object>
+    <hr>
+    <br>
+    <h1>Seamantic HTML</h1>
+
+    <section>
+        <h2>About us</h2>
+        <p>We are a leading company in providing innovative solutions for all your needs. Our team is dedicated to
+            providing top-notch services.</p>
+    </section>
+    <br>
+    <section>
+        <h2>Services</h2>
+        <p>We offer a wide range of services including web development, mobile app development, and cloud solutions.</p>
+    </section> <br>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us via email at contact@ourcompany.com.</p>
+    </section>
+    <br>
+    <article style="border: 1px solid black; padding: 10px; width: 65%; float: left;box-sizing: border-box;">
+        <img src="./All_images/artical.jfif" alt="">
+        <h2>Introduction to Web Development</h2>
+        <p>Web development is the process of building websites and web applications. It involves a combination of HTML,
+            CSS, and JavaScript to create functional, interactive sites.</p>
+        <p>With the growth of the internet, web development has become one of the most important skills in the digital
+            world.</p>
+    </article>
+    <aside style="border: 1px solid gray; padding: 10px; width: 30%; float: right; background-color: #f9f9f9;">
+        <h3>Related Articles</h3>
+        <ul>
+            <li><a href="#">HTML Basics for Beginners</a></li>
+            <li><a href="#">Getting Started with CSS</a></li>
+            <li><a href="#">JavaScript: The Power of Interactivity</a></li>
+            <li><a href="#">Responsive Web Design Tips</a></li>
+        </ul>
+
+    </aside>
+    <div style="clear: both;"></div>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <header style="background-color: rgb(219, 219, 250); text-align: center;">Hi this is header</header><br>
+    <main style="background-color: rgb(217, 241, 241);">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellat inventore et temporibus, fugiat illum
+            ipsum culpa perferendis provident. Doloremque neque ducimus temporibus vel animi facere magni, atque
+            doloribus odit.</p>
+    </main>
+    <footer style="background-color: rgb(219, 219, 250); text-align: center;">This is footer</footer>
+    <br>
+    <p>Web development is a vast field. However, learning <mark>HTML</mark>, <mark>CSS</mark>, and
+        <mark>JavaScript</mark>
+        is essential to becoming a good web developer.
+    </p>
+    <br>
+    <figure>
+        <img src="./All_images/mountain.jfif" alt="A beautiful scenery of a mountain">
+        <figcaption>A beautiful mountain scenery at sunset.</figcaption>
+    </figure>
+<br>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" fill="blue" />
+</svg>
+<br>
+
+</body>
+
+</html>

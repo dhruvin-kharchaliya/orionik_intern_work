@@ -1,0 +1,166 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.home_section {
+    height: 100vh;
+    overflow-y: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-image: url("/week1/All_images/dark-night-rain-car-wallpaper-preview.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Overlay style */
+
+
+/* Main content style */
+.main {
+    
+    background-color: rgb(243, 127, 127);
+   z-index: 2;
+    position: relative;
+}
+
+/* logo style */
+.logo {
+    font-size: 2rem;
+    position: relative;
+    right: 36px;
+}
+
+/* nav bar style */
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 71px;
+}
+
+.nav .nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav li a {
+  
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.nav li a:hover {
+    background-color: rgb(234, 134, 134);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 4px 9px;
+}
+
+.nav .nav-menu li {
+    list-style: none;
+}
+
+/* Search box styles */
+.search {
+    display: flex;
+
+}
+
+.search input {
+    padding: 7px 21px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.search button {
+    margin-left: -1px;
+    border: 2px solid black;
+    padding: 6px 21px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.search button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Form styles */
+.form {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    bottom: 75px;
+    left: 60px;
+    width: 399px;
+}
+
+fieldset {
+    padding: 64px 34px;
+   
+}
+fieldset span{
+    display:inline;
+    color: white;
+    line-height: 3;
+    margin: 5px;
+}
+
+span:nth-child(2){
+    margin-right: 100px;
+}
+legend {
+    font-size: 1.9rem;
+    color: rgb(255, 163, 163);
+    font-weight: 900;
+}
+
+fieldset input {
+    padding: 7px 38px;
+    font-size: 0.9rem;
+    margin: 10px;
+     /* /* background: #0000008c; */
+    /* margin: 5px; */
+}
+
+fieldset input::placeholder {
+    /* color: rgba(255, 255, 255, 0.7); */
+    /* Adjust color and opacity as needed */
+}
+
+fieldset button{
+    width: 100%;
+    padding: 8px 1px;
+    font-size: 1.2em;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+fieldset button:hover{
+    background-color: pink;
+  border: 3px solid white;
+
+}
+
+
+
+/* footer part  */
+.footer-part{
+    
+    background-color: rgb(243, 127, 127);
+        
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    
+}
