@@ -1,0 +1,378 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+}
+header{
+ display: flex;   
+ height: 55px;
+ width: 100vw;
+ background-color: #04233B;
+ color: white;
+ align-items: center;
+ justify-content: space-between;
+ padding-right: 25px;
+}
+header i{
+    margin: 3px;
+font-size: 1.2rem;
+}
+body{
+    font-family: LatoGoogle, Lato, LatoWeb, sans-serif;
+    overflow-x: hidden;
+
+}
+/* navigation bar style  */
+.nav{
+    height: 76px;
+    background-color: white;
+   width: 100vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    gap: 2.8rem;
+    padding-right: 21px;
+}
+.nav li{
+    list-style: none;
+    margin-right: 15px;
+}
+.nav li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: LatoGoogle, Lato, LatoWeb, sans-serif;
+    color: black;
+}
+.nav li a:hover{
+    color: rgb(148, 148, 214);
+}
+.nav i{
+font-size: 1.2rem;
+margin-right: 6px;
+}
+.nav .logo{
+    font-weight: bold;
+    font-size: 26px;
+    color: #000000;
+    margin-left: 31px;
+}
+/* hero section of page   */
+.hero{
+    background: url('./images/truckimg.avif');
+    height: calc(100vh - 131px);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero .background-overlap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.hero-title{
+    position: relative;
+    z-index: 2;
+    color: white;
+
+}
+.hero-big-title{
+    font-size: 4.4rem;
+    position: absolute;
+    top: 53px;
+    left: 19px;
+    font-weight: 700;
+}
+
+.paragraph{
+    color: white;
+    z-index: 3;
+    position: absolute;
+    top: 228px;
+    max-width: 49%;
+    left: 19px;
+    font-size: 1.1rem;
+
+}
+.btn button{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    background-color: #0a97b0;
+    top: 336px;
+    left: 19px;
+    padding: 12px 36px;
+    font-size: 1.1rem;
+}
+/* services section of page  */
+#services{
+    height: 100vh;
+    width: 100vw;
+   background-color: white;
+    padding: 90px 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.services-title{
+    display: flex;
+    flex-direction: column;
+    height: 72px;
+    width: 930px;
+    align-items: flex-start;
+    margin-left: 125px;
+    gap: 10px;
+}
+.services-container{
+    padding: 0px 15px;
+    margin: 20px 110px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 41px;
+    column-gap: 15px;
+}
+.service-box i{
+   
+}
+.service-box{
+   
+    width: 440px; 
+    background-color: #f8f8f9;
+    height: 190px;
+    width: 455px;
+    padding: 19px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.service-box .img{
+    height: 86px;
+    width: 210px;
+    margin-right: 16px;
+
+}
+.service-box img{
+    width: 100%;
+}
+.detail-box{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+/* about us section styling  */
+#Aboutus-section{
+    width: 100vw;
+    height: 70vh;
+   background-color:lightgray;
+
+    padding-bottom: 90px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0px 83.200px;
+    padding: 0px 15px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img{
+    position: relative;
+    top: 45px;
+    right: 10px;
+    max-width: 100%;
+    height: 100%;
+   width: 40%;
+    display: block;
+    object-fit: cover;
+}
+.about-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-detailbox{
+    gap: 20px;
+    width: 40%;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+.about-detailbox>p{
+    text-align: justify;
+line-height: 1.5rem;
+ 
+}
+.about-detailbox button{
+    max-width: 140px;
+   
+    padding: 14px;
+    font-size: 1.2rem;
+    background-color: #0a97b0;
+    color: white;
+    border: none;
+}
+/* conrect us styling */
+#Contact-us{
+    height: 76vh;
+width: 100vw;
+
+
+
+}
+.contect-title{
+    width: 100%;
+    
+}
+.contect-title h1{
+    font-size: 2.3rem;
+}
+.contact-container{
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    
+    padding-left: 99px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0px;
+padding-left: 95px;
+gap: 19px;
+}
+.contact-form{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.contact-form input,textarea{
+    width: 100%;
+    margin: 16px 0px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 21.15);
+    font-size: 1rem;
+}
+
+.contect-map{
+    height: 100%;
+    width: 70%;
+   margin-left: 21px;
+
+}
+.contect-map iframe{
+    width: 100%;
+
+}
+.contact-form input[type="submit"]{
+    padding: 14px;
+    font-size: 1.6rem;
+    box-shadow: none;
+    border-radius: 0px;
+    width: 140px;
+    background-color: #0a97b0;
+    color: white;
+}
+/* ffoter section style  */
+#footer{
+    width: 100vw;
+    height: 50vh;
+}
+.footer-container{
+  width: 100%;
+  height: 100%;
+   padding: 0px 92px;
+    background-color: #04233b;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: white;
+    padding: 65px 0px;
+}
+.footer-container i{
+   color: white; 
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.address-info{
+    display: flex;
+    flex-direction: column;
+}
+.address .icons{
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+}
+.address-info i{
+    margin-right: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.subscribe form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 8px;
+    
+}
+.subscribe form>input[type="text"]{
+    font-size: 1rem;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom:2px solid #f8f8f9;
+   
+    outline: none;
+   
+}
+.subscribe form>input::placeholder{
+    color: white;
+}
+.subscribe form input[type="submit"]{
+    background-color: #0a97b0;
+    padding: 10px 55px;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+}
