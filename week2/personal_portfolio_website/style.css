@@ -84,9 +84,8 @@ ul li a:hover {
 
 .right-section {
     width: 45%;
-height: 75vh;
-position: relative;
-top: -45px;
+
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
