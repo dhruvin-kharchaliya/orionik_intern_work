@@ -1,0 +1,301 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: white;
+    background-color: #292541;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation CSS */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background-color: #433878;
+    width: 100%;
+}
+
+.toggler {
+    color: white;
+    font-size: 1.6rem;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+ul li a:hover {
+    color: blueviolet;
+    font-size: 1.3rem;
+}
+
+.left-nav {
+    font-size: 1.6rem;
+}
+
+/* Main Section Styling */
+.First-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 29px 0px;
+    width: 100%;
+    height: 80vh;
+    padding-left: 13px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    justify-content: center;
+    width: 45%;
+    text-align: start;
+}
+
+.right-section {
+    width: 45%;
+height: 75vh;
+position: relative;
+top: -45px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.right-section img {
+    width: 100%;
+    height: 100%;
+    max-width: 482px;
+    object-fit: cover;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+/* About Section Style */
+#about-section {
+    padding: 4rem 10%;
+    width: 100vw;
+    background-color: rgb(123, 159, 159);
+}
+
+#about-section p {
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: black;
+}
+
+#about-section h2 {
+    margin-bottom: 26px;
+    font-size: 2.5rem;
+}
+
+/* Projects Section Style */
+#projects {
+    padding: 4rem 10%;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 26px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    overflow: hidden;
+    gap: 20px;
+    padding: 0;
+}
+
+.project-cards h3 {
+    border-bottom: 1px solid white;
+    margin-bottom: 49px;
+}
+
+.project-cards {
+    padding: 18px;
+    overflow: hidden;
+}
+
+.project-cards:hover {
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+}
+
+.project-cards p {
+    font-size: 1.1rem;
+}
+
+#card-1, #card-2, #card-3 {
+    background-color: rgb(209, 122, 16);
+}
+
+/* Contact Part Styling */
+#contact-part {
+    padding: 4rem 10%;
+    background-color: rgb(123, 159, 159);
+}
+
+#contact-part h2 {
+    font-size: 2.5rem;
+    margin-bottom: 26px;
+}
+
+#contact-part form {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+input, textarea {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
+form input[type="submit"]:hover {
+    font-size: 1.3rem;
+    border-bottom: 2px solid white;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .toggler {
+        display: block;
+        position: relative;
+        right: -3px;
+        font-size: 3.2rem;
+    }
+
+    .left-nav {
+        position: relative;
+        right: 15px;
+        font-size: 1.9rem;
+    }
+
+    .First-section {
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    .right-section {
+        width: 100%;
+        height: 62%;
+        /* Removed positioning */
+        object-fit: cover;
+        background-size: cover;
+    }
+
+    .right-section img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .left-section {
+        font-size: 2.2rem;
+        position: relative;
+        right: -13px;
+        width: 100%;
+    }
+
+    #about-section {
+        padding: 1rem 1rem;
+        position: relative;
+        left: 10px;
+    }
+
+    #about-section p {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    #about-section h2 {
+        margin-bottom: 10px;
+    }
+
+    /* Projects Section Style */
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .First-section {
+        flex-direction: row;
+        gap: 182px;
+    }
+
+    .left-section {
+        width: 50%;
+        font-size: 1.8rem;
+        /* Removed positioning */
+    }
+
+    .right-section {
+        width: 50%;
+        margin-right: 23px;
+        /* Ensure full viewport height */
+    }
+
+    .right-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+
+    /* Header remains unchanged */
+}
