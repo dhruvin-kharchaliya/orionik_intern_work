@@ -36,6 +36,7 @@ nav {
     color: white;
     font-size: 1.6rem;
     display: none;
+    overflow-y: hidden;
 }
 
 nav ul {
@@ -228,7 +229,7 @@ form input[type="submit"]:hover {
         position: relative;
         right: -3px;
         font-size: 3.2rem;
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .left-nav {
@@ -239,12 +240,12 @@ form input[type="submit"]:hover {
 
     .First-section {
         flex-direction: column;
-        gap: 41px;
+        gap: 10px;
     }
 
     .right-section {
         width: 100%;
-        height: 62%;
+        height: 65%;
         /* Removed positioning */
         object-fit: cover;
         background-size: cover;
@@ -260,6 +261,7 @@ form input[type="submit"]:hover {
         position: relative;
         right: -13px;
         width: 100%;
+        height: 35%;
     }
 
     #about-section {
