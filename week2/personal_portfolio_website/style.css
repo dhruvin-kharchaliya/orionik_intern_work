@@ -119,6 +119,7 @@ overflow: hidden;
     margin-bottom: 1rem;
     font-size: 1.1vw;
     color: black;
+    overflow-y: hidden;
 }
 
 #about-section h2 {
@@ -227,6 +228,7 @@ form input[type="submit"]:hover {
         position: relative;
         right: -3px;
         font-size: 3.2rem;
+        overflow-y: hidden;
     }
 
     .left-nav {
@@ -262,8 +264,9 @@ form input[type="submit"]:hover {
 
     #about-section {
         padding: 1rem 1rem;
-        position: relative;
+     
         left: 10px;
+
     }
 
     #about-section p {
@@ -309,10 +312,15 @@ form input[type="submit"]:hover {
     }
     /* about section responsive  */
     #about-section p{
-       font-size: 3vw;
+        font-size: 2vw;
     }
     #about-section {
         padding: 10px 10px;
     }
 
+}
+@media(min-width:769px) and (max-width:1024px){
+    #about-section p{
+        font-size: 2vw;
+    }
 }
