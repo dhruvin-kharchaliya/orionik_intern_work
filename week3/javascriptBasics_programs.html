@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic Programs for week 3</title>
+</head>
+
+<body>
+    <script>
+        console.log("hello World");
+        // js variables of diffrent datatypes
+                var a=1;
+                console.log("interger value",a);
+                var a="hello world";
+                console.log("string datatype",a);
+        var a=true;
+        console.log("value of boolean is",a)
+
+        var b=null;
+        console.log("null value",b)
+
+        var b=undefined;
+        console.log("null value",b)
+
+        var b=["hello",
+        12];
+        console.log("object b value is",b);
+        console.log("\n");
+
+        // basic calculator using operators 
+        let c=parseFloat(prompt("enter first Number"));
+        let d=parseFloat(prompt("Enter the second number"));
+
+        console.log("addition",c+d);
+        console.log("subtraction",c-d);
+        console.log("Multiplication",c*d);
+        console.log("division",c/d);
+        functions 
+        // Write a function that calculates the area of a circle. 
+        let pi=3.14;
+        let radius=5;
+        let result=pi*radius*radius;
+        document.write(`Are of circle is${result}`);
+
+        // Control Structures 
+        // Create a function that grades students based on their scores using if-else and switch. 
+       
+
+   
+        let marks = parseFloat(prompt("enter your marks"));
+        switch (true) {
+            case (marks<=100 && marks>=90):
+                document.write(`Very good:${marks}`);
+                     break;
+
+            case (marks>=80 && marks< 90):
+                document.write(`good:${marks}`);
+                  break;
+
+            case (marks>=70 && marks<80):
+                document.write(`Average marks:${marks}`);
+                 break;
+              
+                 case (marks>=60 && marks<70):
+                document.write(`lower marks:${marks}`);
+                 break;
+               
+                 case (marks>=40 && marks<=60):
+                document.write(`poor marks:${marks}`);
+                 break;
+
+            
+
+            default:
+                document.write(`Enter valid number`);
+
+        }
+
+        // Loops
+        // Write a loop that prints numbers from 1 to 100 and identifies even numbers. 
+        for (let i = 1; i <= 100; i++) {
+    
+    if (i % 2 !== 0) {
+        continue;  
+    }
+
+    
+   document.write(`${i} is even`+"<br>");
+        }
+let student={
+    name:"Dhruvin",
+    age:21,
+    grade:"A"
+
+};
+console.log(student);
+    </script>
+</body>
+
+</html>
