@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Simple To-Do List</h1>
+        <input type="text" id="todo-input" placeholder="Enter a new to-do">
+        <button id="add-btn">Add</button>
+        <ul id="todo-list"></ul>
+    </div>
+   
+<script>
+    
+const todoInput = document.getElementById('todo-input');
+const addBtn = document.getElementById('add-btn');
+const todoList = document.getElementById('todo-list');
+
+addBtn.addEventListener('click', () => {
+    const todoText = todoInput.value.trim();
+
+    if (todoText !== "") {
+        todoList.innerHTML += `<li>${todoText} <button onclick="this.parentElement.remove()">Remove</button></li>`;
+todoInput.value = "";
+    }
+});
+
+</script>
+</body>
+</html>

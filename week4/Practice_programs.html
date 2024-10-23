@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js week 4 Practice Programs</title>
+    <link rel="stylesheet" href="/orionik_intern_work/week4/styles.css">
+</head>
+<body>
+   <!-- dom task 1 -->
+    <!-- <div class="container">
+        <h1>Hello this is Heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div> -->
+<!-- <hr> -->
+    <!--  dom task 2
+     Adding and Removing Elements 
+     Add a button that adds a new paragraph to a section, and another button that removes the last paragraph.  -->
+    <!-- <div id="paragraph">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <button id="Addbtn">Add Paragraph</button>
+    <button id="removebtn">Remove Paragraph</button> -->
+    
+    <!-- dom task 3
+    Styling Elements
+    Create a button that changes the background color of a div when clicked.    -->
+
+    <!-- <div id="bg">this is div</div> -->
+
+
+<!-- events 
+ Introduction to Event Handling 
+ Create a button that changes text when clicked.  -->
+
+ <!-- <p id="changepara">Lorem ipsum dolor sit amet.</p>
+<button id="changebtn">changes Pragraph</button> -->
+
+<!--  Form Handling and Validation  -->
+ <!-- <form action="">
+    <input type="text" name="" id="name" placeholder="Enter the Name" required> <br>
+    <input type="email" name="" id="email" placeholder="email" required> <br>
+    <input type="password" name="" id="password" placeholder="Enter the Password" required> <br>
+    <input type="submit" value="submit" id="submit">
+ </form> -->
+
+    <script>
+        // Dom task 1
+        // let name=document.getElementsByTagName('h1')[0];
+        // name.textContent="hello this dom";
+        // console.log(name);
+
+        // dom task 2
+        // Adding and Removing Elements 
+        // Add a button that adds a new paragraph to a section, and another button that removes the last paragraph. 
+//         let paragraphsection=document.getElementById('paragraph');
+// let addbtn=document.getElementById('Addbtn');
+// let removebtn=document.getElementById('removebtn');
+
+// addbtn.addEventListener('click',()=>{
+//     let newpara=document.createElement('p');
+//     newpara.textContent="This is New Paragraph";
+//     paragraphsection.appendChild(newpara);
+// });
+
+// removebtn.addEventListener('click',()=>{
+//     let paragraphs=paragraphsection.getElementsByTagName('p');
+//     if(paragraphs.length>0){
+//         paragraphsection.removeChild(paragraphs[paragraphs.length-1]);
+//     }
+// })
+
+
+//dom task 3
+//Styling Elements
+//Create a button that changes the background color of a div when clicked.
+// let color=document.getElementById('bg');
+// color.addEventListener('click',()=>{
+//     color.style.backgroundColor="red";
+// })
+
+
+// events 
+// Introduction to Event Handling 
+// Create a button that changes text when clicked. 
+// let changespara=document.getElementById('changepara');
+// let changeBtn=document.getElementById('changebtn');
+// changeBtn.addEventListener('click',()=>{
+//     changespara.textContent="Hi this new text.";
+// });
+
+
+//  Form Handling and Validation 
+//  Create a simple form that alerts the user when they try to submit without filling out required fields.
+//  let Name=document.getElementById('name');
+//  let Email=document.getElementById('email');
+//  let Password=document.getElementById('password');
+
+//  let Submit = document.getElementById('submit');
+//  Submit.addEventListener('click', (event) => {
+// event.preventDefault();
+//      if (Name.value === "" || Email.value === "" || Password.value === "") {
+//          alert("Plz Submit All Inputs");
+//      } else {
+//         alert("Your Data submited");
+//      }
+//  });
+
+
+    </script>
+</body>
+</html>

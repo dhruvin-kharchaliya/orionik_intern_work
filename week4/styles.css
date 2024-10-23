@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* dom task-3 css  */
+#bg{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin-left: 10px;
+}

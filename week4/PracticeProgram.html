@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Navigation</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    /* Basic styles for navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Style for sections */
+section {
+    padding: 100px 20px;
+    margin-top: 60px; /* To account for the fixed navbar */
+}
+#section1{
+    background-color: green;
+}
+#section2{
+    background-color: red;
+}
+#section3{
+    background-color: yellow;
+}
+#section4{
+    background-color: blue;
+}
+
+/* section:nth-child(even) {
+    background-color: #f4f4f4;
+} */
+
+/* section:nth-child(odd) {
+    background-color: #e2e2e2;
+} */
+html{
+    scroll-behavior: smooth;
+}
+</style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the content for section 1.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the content for section 2.</p>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the content for section 3.</p>
+    </section>
+
+    <section id="section4">
+        <h2>Section 4</h2>
+        <p>This is the content for section 4.</p>
+    </section>
+
+    <script>
+        // Add smooth scrolling behavior for all links in the navigation
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (event) {
+//         event.preventDefault();
+//         const targetSection = document.querySelector(this.getAttribute('href'));
+
+//         // Smoothly scroll to the section
+//         targetSection.scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+
+    </script>
+</body>
+</html>
