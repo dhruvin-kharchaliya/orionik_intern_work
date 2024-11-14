@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <script>
+        // ES6 Basics and Arrow Functions 
+        // Practice exercise - Convert traditional functions to arrow functions 
+        function hello() {
+            console.log("hi this is normal function");
+        }
+        hello();
+        let hi = (a, b) => {
+            console.log("hi this is arrow  function");
+            return a + b;
+        }
+        let result = hi(10, 20);
+        console.log(result);
+
+        // Template Literals and String Methods 
+        // Practice exercise - Create a template literal that constructs a descriptive message from variables. 
+        let name = "Dhruvin";
+        console.log(`hi my name is ${name}`);
+
+        const hello1 = "hi";
+        console.log(`hi this is multiline comments.
+${hello1} and this is example.`)
+
+        // Destructuring Assignment 
+        // Practice exercise - Use destructuring to extract values from an object and an array. 
+        let emp = {
+            name: "dhruvin", age: 21,
+            address: {
+                city: "kadi",
+                pin: 382715
+            }
+        };
+        let person = { name, age, address: { city, pin } } = emp;
+        console.log(name);
+        console.log(age);
+
+        // destructring in array 
+        let num = [1, 2, 3, 4, 5, 6];
+        let nam = [first, , third, ...rest] = num;
+        console.log(first, third)
+        console.log(rest);
+
+        // Spread and Rest Operators 
+        // Practice exercise - Use the spread operator to combine multiple arrays into one and the rest parameter to handle variable arguments in a function. 
+        let arr1 = [1, 2, 3];
+        let arr2 = [4, 5, 6];
+        let a = [...arr1, ...arr2];
+        console.log(a);
+
+        // rest parameter to handle variable arguments in a function.
+
+        concate = (...strings) => {
+            return strings.join("+");
+        }
+        let num1 = concate(1, 2, 3);
+        console.log(num1);
+
+        // Default Parameters and Object Literals 
+        // Create an object with shorthand properties and methods.
+        let Myname = "dhruvin";
+        let age1 = 21;
+        let Person = {
+            Myname,
+            age,
+            greet() {
+                console.log(`my name is ${Myname} and My age is ${age1}`);
+            }
+
+        };
+        console.log(Person.greet());
+
+
+        // Introduction to Promises 
+        // Practice exercise - Create a simple Promise that resolves after a timeout and logs a message. 
+        // let mypromise = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         const success = true;
+        //         if (success) {
+        //             resolve("hi this is Promise");
+        //         }
+        //         else {
+        //             reject("error occured hi my name is dhruvin");
+        //         }
+        //     }, 2000);
+        // })
+        // console.log(mypromise);
+
+        // mypromise.then((message) => {
+        //     console.log(message);
+
+        // });
+        // mypromise.catch((error) => {
+        //     console.log("hi error is " + error);
+        // });
+        // mypromise.finally(() => {
+        //     console.log("hi this is defualt ")
+        // })
+
+
+        // Async/Await 
+        // Practice exercise - Write a function using async/await to simulate a data fetch and handle errors gracefully. 
+        function fetchData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let success = Math.random() > 0.5;
+
+            if (success) {
+                resolve({ name: "Dhruvin", age: 21 });
+            } else {
+                reject("Data not fetched");
+            }
+        }, 2000);
+    });
+}
+
+async function getData() {
+    try {
+        let data1 = await fetchData(); 
+        console.log("Data fetched successfully:", data1);
+    } catch (error) {
+        console.log("Error:", error);
+    }
+ 
+}
+
+getData();
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

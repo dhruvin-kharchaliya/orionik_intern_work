@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post request in form</title>
+</head>
+<body>
+ 
+    <form action="" id="forminfo">
+        <input type="text" name="name" id="name" placeholder="Enter the name"> <br>
+        <input type="password" name="password" id="password" placeholder="Enter the password"> <br>
+        <input type="submit" value="submit" id="submit">
+    </form>
+
+    <script>
+        let name = document.getElementById('name');
+        let password = document.getElementById('password');
+        let forminfo = document.getElementById('forminfo');
+
+        forminfo.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Display entered data as new input fields for verification
+            let inputname = document.createElement('input');
+            inputname.value = name.value;
+            inputname.setAttribute('readonly', true);
+
+            let inputpass = document.createElement('input');
+            inputpass.value = password.value;
+            inputpass.setAttribute('readonly', true);
+
+            forminfo.appendChild(inputname);
+            forminfo.appendChild(inputpass);
+
+            // Send data to the API and log the response
+            try {
+                let response = await fetch('https://dummyjson.com/users/add', {
+                    method: "POST",
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        username: name.value,   // Store name in username field
+                        password: password.value // Store password in password field
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.statusText}`);
+                }
+
+                let data = await response.json();
+                console.log("Data submitted successfully:", data); 
+
+            } catch (error) {
+                console.error("Error submitting data:", error);
+            }
+        });
+    </script>
+  
+    
+</body>
+</html>
