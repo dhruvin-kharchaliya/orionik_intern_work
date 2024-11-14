@@ -90,29 +90,29 @@ ${hello1} and this is example.`)
 
         // Introduction to Promises 
         // Practice exercise - Create a simple Promise that resolves after a timeout and logs a message. 
-        // let mypromise = new Promise((resolve, reject) => {
-        //     setTimeout(() => {
-        //         const success = true;
-        //         if (success) {
-        //             resolve("hi this is Promise");
-        //         }
-        //         else {
-        //             reject("error occured hi my name is dhruvin");
-        //         }
-        //     }, 2000);
-        // })
-        // console.log(mypromise);
+        let mypromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const success = true;
+                if (success) {
+                    resolve("hi this is Promise");
+                }
+                else {
+                    reject("error occured hi my name is dhruvin");
+                }
+            }, 2000);
+        })
+        console.log(mypromise);
 
-        // mypromise.then((message) => {
-        //     console.log(message);
+        mypromise.then((message) => {
+            console.log(message);
 
-        // });
-        // mypromise.catch((error) => {
-        //     console.log("hi error is " + error);
-        // });
-        // mypromise.finally(() => {
-        //     console.log("hi this is defualt ")
-        // })
+        });
+        mypromise.catch((error) => {
+            console.log("hi error is " + error);
+        });
+        mypromise.finally(() => {
+            console.log("hi this is defualt ")
+        })
 
 
         // Async/Await 
